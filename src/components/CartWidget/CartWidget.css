@@ -1,0 +1,9 @@
+.DiseñoCarrito {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.DiseñoCarrito :hover {
+    cursor: pointer;
+}

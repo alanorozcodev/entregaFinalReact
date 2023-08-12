@@ -1,0 +1,16 @@
+.Categories > a {
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Categories {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-evenly;
+}

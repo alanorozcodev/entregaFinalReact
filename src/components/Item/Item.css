@@ -1,0 +1,35 @@
+.ItemImg
+{
+    width: 300px;
+    height: 500px;
+}
+
+.CardItem 
+{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 15px; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+.SectionFormat {
+    border-top: 1px solid;
+}
+
+.ItemHeader {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.Info {
+    font-size: medium;
+    font-weight:600 ;
+}
+
+.ItemFooter > a {
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
