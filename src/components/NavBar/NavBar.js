@@ -10,10 +10,10 @@ const NavBar = () => {
                 <img src={LogoSharkTCG} alt="Logo Shark TCG" />
             </Link>
             <div className="Categories">
-                <NavLink to={`/category/expansion`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Expansion </NavLink>
-                <NavLink to={`/category/caja`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Caja </NavLink>
-                <NavLink to={`/category/accesorios`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Accesorios </NavLink>
-                <NavLink to={`/category/lata`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Lata </NavLink>
+                <NavLink to={`/category/Expansion`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Expansion </NavLink>
+                <NavLink to={`/category/Caja`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Caja </NavLink>
+                <NavLink to={`/category/Accesorios`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Accesorios </NavLink>
+                <NavLink to={`/category/Lata`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' }> Lata </NavLink>
             </div>
             <CartWidget />
         </nav>

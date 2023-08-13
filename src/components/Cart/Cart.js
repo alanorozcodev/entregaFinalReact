@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import CartItem from "../CartItem/CartItem"
 
 const Cart = () => {
-    const {cart, clearCart, totalItems, total} =useContext(CartContext)
+    const {cart, clearCart, totalItems, totalPrices} =useContext(CartContext)
 
 
 
@@ -16,11 +16,11 @@ const Cart = () => {
             </div>
         )
     }
-
+    console.log({cart});
     return (
         <div>
             { cart.map(p => <CartItem key={p.id} {...p}/>)}
-            <h3>Total: ${total} </h3>
+            <h3>Total: ${totalPrices()} </h3>
             <button onClick={() => clearCart()} className="Button">Limpiar Carrito</button>
             <Link to= '/checkout' className="Option">Checkout</Link>
         </div>
