@@ -5,10 +5,9 @@ import { CartContext } from "../../context/CartContext";
 
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
-
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const { addItem } =useContext(CartContext)
+    const { addItem } = useContext(CartContext)
 
     const handledOnAdd = (quantity) => {
         setQuantityAdded (quantity)
@@ -42,16 +41,16 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 </p>
             </section>
             <footer className="ItemFooter">
-                {
-                    quantityAdded > 0 ? (
-                        <Link to='/cart' className="Option">Terminar Compra</Link> 
-                    ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handledOnAdd} />
-                    )
-                }                
+                <div>
+                {quantityAdded > 0 ? 
+                (<div><Link to='/cart'><span title="Ver Carrito">Ver carrito</span></Link>
+                        <Link to='/' className="Option">Terminar Compra</Link> </div>) 
+                        : 
+                        (<ItemCount initial={1} stock={stock} onAdd={handledOnAdd} /> ) }
+                </div>             
             </footer>
         </article>
-    )
+                )
 }
 
 

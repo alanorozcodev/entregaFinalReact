@@ -79,3 +79,7 @@ export const getProductsByCategory = (productCategory) => {
         }, 500)
     })
 }
+
+
+
+export default products;
