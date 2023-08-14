@@ -3,20 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { initializeApp } from "firebase/app";
 
 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyD2MbJAcw-N16QwYmuDlgllc3sY51UiPUQ",
-  authDomain: "coderhouse-sharktcg.firebaseapp.com",
-  projectId: "coderhouse-sharktcg",
-  storageBucket: "coderhouse-sharktcg.appspot.com",
-  messagingSenderId: "859561690557",
-  appId: "1:859561690557:web:4a8482e3b0626decc5bed4"
-};
 
-initializeApp(firebaseConfig);
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
